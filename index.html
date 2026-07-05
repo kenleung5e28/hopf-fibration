@@ -8,6 +8,19 @@
   <body>
     <div id="app">
       <canvas id="scene"></canvas>
+      <nav id="mobile-toolbar" aria-label="Mobile panels">
+        <button type="button" data-panel-toggle="controls" aria-controls="controls" aria-expanded="false">
+          Controls
+        </button>
+        <button
+          type="button"
+          data-panel-toggle="explanation"
+          aria-controls="explanation"
+          aria-expanded="false"
+        >
+          Info
+        </button>
+      </nav>
       <aside id="controls" class="panel"></aside>
       <section id="explanation" class="panel">
         <h1>Hopf Fibration</h1>
