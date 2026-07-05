@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hopf Fibration</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene"></canvas>
+      <aside id="controls" class="panel"></aside>
+      <section id="explanation" class="panel">
+        <h1>Hopf Fibration</h1>
+        <p>
+          <strong>S^3</strong> is represented as pairs of complex numbers
+          (z1, z2) with |z1|^2 + |z2|^2 = 1.
+        </p>
+        <p>
+          The <strong>Hopf map</strong> sends each point of S^3 to a point on S^2:
+          (2 Re(z1 conjugate(z2)), 2 Im(z1 conjugate(z2)), |z1|^2 - |z2|^2).
+        </p>
+        <p>
+          A <strong>fiber</strong> is all points (e^(it) z1, e^(it) z2) for a
+          fixed base point on S^2. Each rendered curve samples one such fiber.
+        </p>
+        <p>
+          <strong>Stereographic projection</strong> converts points from S^3 in
+          R^4 to visible curves in R^3. This app projects from the +d pole.
+        </p>
+      </section>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
